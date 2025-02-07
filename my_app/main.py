@@ -3,6 +3,7 @@
 def add(a: float, b: float) -> float:
     """
     Returns the sum of a and b.
+    print(None)
     """
     return a + b
 
