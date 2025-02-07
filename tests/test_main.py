@@ -1,7 +1,15 @@
 # tests/test_main.py
+# tests/test_main.py
+import sys
+import os
+
+# Hacky approach: add the parent directory to sys.path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 
 import pytest
 from my_app.main import add, subtract, multiply, divide
+
 
 def test_add():
     assert add(2, 3) == 5
